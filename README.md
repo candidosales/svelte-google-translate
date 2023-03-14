@@ -6,6 +6,8 @@
 npm i @candidosales/svelte-google-translate
 ```
 
+![screenshot](./docs/screenshot-svelte-google-translate.png)
+
 ### Usage
 
 ```svelte
@@ -23,21 +25,27 @@ npm i @candidosales/svelte-google-translate
 </div>
 ```
 
-| Option            |        Default value         | Description                                                                                                                                                                                                                                                                           |
-| ----------------- | :--------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| elementId         | `'google-translate-element'` | This option specifies the HTML element ID. The default value is `google-translate-element`.                                                                                                                                                                                           |
-| pageLanguage      |            `'pt'`            | This option specifies the language of the page that you want to translate. The default value is "auto", which means that Google will detect the language automatically.                                                                                                               |
-| includedLanguages | `'pt,en,es,fr,nl,ja,zh-CN'`  | This option is an array of language codes that you want to include in the language selector. If you don't specify this option, Google will include all languages that are supported by the API. Supported languages: https://cloud.google.com/translate/docs/languages.               |
-| layout            |            `true`            | This option specifies the layout of the language selector. The default value is "horizontal", which displays the language names in a row. Other options include "vertical" (displays the language names in a column) and "dropdown" (displays the language names in a dropdown menu). |
-| autoDisplay       |            `true`            | This option specifies whether or not to display the language selector automatically. The default value is true.                                                                                                                                                                       |
-| multilanguagePage |           `false`            | This option specifies whether or not the page being translated contains multiple languages. The default value is false.                                                                                                                                                               |
-| gaTrack           |           `false`            | This option specifies whether or not to track translation events using Google Analytics. The default value is false.                                                                                                                                                                  |
-| gaId              |              ``              | This option specifies the Google Analytics tracking ID to use if gaTrack is set to true.                                                                                                                                                                                              |
-| layoutCompact     |           `false`            | This option specifies whether to use a compact layout for the language selector. The default value is false.                                                                                                                                                                          |
-| floatPosition     |          `TOP_LEFT`          | This option specifies the position of the language selector if layoutCompact is set to true. The default value is "TOP_LEFT", other options include "TOP_RIGHT", "BOTTOM_LEFT", and "BOTTOM_RIGHT".                                                                                   |
-| timeout           |            `5000`            | This option specifies the time in milliseconds before the API returns an error if it fails to load. The default value is 5000.                                                                                                                                                        |
-| newVersion        |           `false`            | This option specifies whether to use the new version of the Google Translate API. The default value is false.                                                                                                                                                                         |
-| attribution       |            `true`            | This option specifies whether to display the "Powered by Google Translate" attribution. The default value is true.                                                                                                                                                                    |
+| Attributes |        Default value         | Description                                                                                 |
+| ---------- | :--------------------------: | ------------------------------------------------------------------------------------------- |
+| elementId  | `'google-translate-element'` | This option specifies the HTML element ID. The default value is `google-translate-element`. |
+| option     |                              | This option specifies all config that TranslateElementOptions provides.                     |
+
+### Options
+
+| Option            |        Default value        | Description                                                                                                                                                                                                                                                                           |
+| ----------------- | :-------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| pageLanguage      |           `'pt'`            | This option specifies the language of the page that you want to translate. The default value is "auto", which means that Google will detect the language automatically.                                                                                                               |
+| includedLanguages | `'pt,en,es,fr,nl,ja,zh-CN'` | This option is an array of language codes that you want to include in the language selector. If you don't specify this option, Google will include all languages that are supported by the API. Supported languages: https://cloud.google.com/translate/docs/languages.               |
+| layout            |           `true`            | This option specifies the layout of the language selector. The default value is "horizontal", which displays the language names in a row. Other options include "vertical" (displays the language names in a column) and "dropdown" (displays the language names in a dropdown menu). |
+| autoDisplay       |           `true`            | This option specifies whether or not to display the language selector automatically. The default value is true.                                                                                                                                                                       |
+| multilanguagePage |           `false`           | This option specifies whether or not the page being translated contains multiple languages. The default value is false.                                                                                                                                                               |
+| gaTrack           |           `false`           | This option specifies whether or not to track translation events using Google Analytics. The default value is false.                                                                                                                                                                  |
+| gaId              |             ``              | This option specifies the Google Analytics tracking ID to use if gaTrack is set to true.                                                                                                                                                                                              |
+| layoutCompact     |           `false`           | This option specifies whether to use a compact layout for the language selector. The default value is false.                                                                                                                                                                          |
+| floatPosition     |         `TOP_LEFT`          | This option specifies the position of the language selector if layoutCompact is set to true. The default value is "TOP_LEFT", other options include "TOP_RIGHT", "BOTTOM_LEFT", and "BOTTOM_RIGHT".                                                                                   |
+| timeout           |           `5000`            | This option specifies the time in milliseconds before the API returns an error if it fails to load. The default value is 5000.                                                                                                                                                        |
+| newVersion        |           `false`           | This option specifies whether to use the new version of the Google Translate API. The default value is false.                                                                                                                                                                         |
+| attribution       |           `true`            | This option specifies whether to display the "Powered by Google Translate" attribution. The default value is true.                                                                                                                                                                    |
 
 ## 👍 Contribute
 
@@ -63,6 +71,5 @@ Code and documentation copyright 2020-2030 the [Authors](https://github.com/cand
 ## Test Locally
 
 ```bash
-npm run lib:build
-npm run start
+npm run dev
 ```
