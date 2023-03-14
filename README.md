@@ -28,7 +28,7 @@ npm i @candidosales/svelte-google-translate
 | Attributes |        Default value         | Description                                                                                 |
 | ---------- | :--------------------------: | ------------------------------------------------------------------------------------------- |
 | elementId  | `'google-translate-element'` | This option specifies the HTML element ID. The default value is `google-translate-element`. |
-| option     |                              | This option specifies all config that TranslateElementOptions provides.                     |
+| options    |                              | This option specifies all config that TranslateElementOptions provides.                     |
 
 ### Options
 
