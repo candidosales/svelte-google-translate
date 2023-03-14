@@ -1,1 +1,1 @@
-# svelte-google-translate
+# Svelte Google Translate
