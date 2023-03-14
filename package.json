@@ -1,7 +1,7 @@
 {
 	"name": "@candidosales/svelte-google-translate",
 	"description": "Google Translate component for Svelte",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"author": {
 		"email": "candidosg@gmail.com",
 		"name": "Cândido Sales Gomes"
@@ -18,6 +18,12 @@
 		"package": "svelte-package"
 	},
 	"main": "index.js",
+	"exports": {
+		".": {
+			"types": "./package/index.d.ts",
+			"svelte": "./package/index.js"
+		}
+	},
 	"keywords": [
 		"svelte",
 		"sveltekit",
@@ -46,5 +52,6 @@
 	"type": "module",
 	"bugs": {
 		"url": "https://github.com/candidosales/svelte-google-translate/issues"
-	}
+	},
+	"license": "MIT"
 }
