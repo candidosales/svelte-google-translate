@@ -1,7 +1,7 @@
 {
 	"name": "@candidosales/svelte-google-translate",
 	"description": "Google Translate component for Svelte",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"author": {
 		"email": "candidosg@gmail.com",
 		"name": "Cândido Sales Gomes"
@@ -24,13 +24,6 @@
 		".": {
 			"types": "./dist/index.d.ts",
 			"svelte": "./dist/index.js"
-		}
-	},
-	"typesVersions": {
-		">4.0": {
-			"GoogleTranslate": [
-				"./dist/GoogleTranslate.svelte.d.ts"
-			]
 		}
 	},
 	"svelte": "./dist/index.js",

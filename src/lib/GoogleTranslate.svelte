@@ -59,6 +59,8 @@
 		attribution?: boolean;
 	}
 
+	let google: any;
+
 	export let elementId: HTMLElement | string = 'google-translate-element';
 
 	export let options: TranslateElementOptions = {
