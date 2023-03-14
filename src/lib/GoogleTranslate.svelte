@@ -11,12 +11,12 @@
 		/**
 		 * This option specifies the language of the page that you want to translate. The default value is "auto", which means that Google will detect the language automatically.
 		 */
-		pageLanguage: string;
+		pageLanguage?: string;
 		/**
 		 * This option is an array of language codes that you want to include in the language selector. If you don't specify this option, Google will include all languages that are supported by the API.
 		 * Supported languages: https://cloud.google.com/translate/docs/languages
 		 */
-		includedLanguages: string;
+		includedLanguages?: string;
 		/**
 		 * This option specifies the layout of the language selector. The default value is "horizontal", which displays the language names in a row. Other options include "vertical" (displays the language names in a column) and "dropdown" (displays the language names in a dropdown menu).
 		 */
@@ -36,7 +36,7 @@
 		/**
 		 * This option specifies the Google Analytics tracking ID to use if gaTrack is set to true.
 		 */
-		gaId?: boolean;
+		gaId?: string;
 		/**
 		 * This option specifies whether to use a compact layout for the language selector. The default value is false.
 		 */
@@ -59,7 +59,7 @@
 		attribution?: boolean;
 	}
 
-	export let elementId = 'google-translate-element';
+	export let elementId: HTMLElement | string = 'google-translate-element';
 
 	export let options: TranslateElementOptions = {
 		pageLanguage: 'pt',

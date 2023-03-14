@@ -1,7 +1,7 @@
 {
 	"name": "@candidosales/svelte-google-translate",
 	"description": "Google Translate component for Svelte",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"author": {
 		"email": "candidosg@gmail.com",
 		"name": "Cândido Sales Gomes"
