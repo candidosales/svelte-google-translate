@@ -12,7 +12,7 @@ npm i @candidosales/svelte-google-translate
 
 ```svelte
 <script>
-	import GoogleTranslate from '$lib/GoogleTranslate.svelte';
+	import { GoogleTranslate } from '@candidosales/svelte-google-translate';
 </script>
 
 <h1>Svelte Google Translate</h1>

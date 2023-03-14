@@ -1,5 +1,4 @@
 <script>import { onMount } from "svelte";
-let google;
 export let elementId = "google-translate-element";
 export let options = {
   pageLanguage: "pt",
