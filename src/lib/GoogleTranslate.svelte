@@ -78,7 +78,11 @@
 				google.translate != null &&
 				google.translate.TranslateElement != null
 			) {
-				new google.translate.TranslateElement(options, elementId);
+				try {
+					new google.translate.TranslateElement(options, elementId);
+				} catch (e) {
+					console.error('[@candidosales/svelte-google-translate] error:', e);
+				}
 			}
 		}, 300);
 	}
