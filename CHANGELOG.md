@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.0.11] - 2023-06-23
+
+### Changed
+
+- Upgrade Svelte 4;
+
 ## [0.0.10] - 2023-03-24
 
 ### Fix
