@@ -1,7 +1,7 @@
 {
 	"name": "@candidosales/svelte-google-translate",
 	"description": "Google Translate component for Svelte",
-	"version": "0.0.13",
+	"version": "0.0.14",
 	"author": {
 		"name": "Candido Sales Gomes",
 		"email": "candidosg@gmail.com",
@@ -21,7 +21,7 @@
 		"package": "svelte-package",
 		"write-package-json": "node ./scripts/package-json-writer.js",
 		"add-exports": "node ./scripts/add-exports-to-package-json.js",
-		"package:publish": "standard-version && git push --follow-tags origin main && npm run build && npm run add-exports && npm run write-package-json"
+		"package:publish": "standard-version && git push --follow-tags origin main && npm run build && npm run add-exports && npm run write-package-json && npm publish"
 	},
 	"files": [
 		"dist",
