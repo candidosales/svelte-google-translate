@@ -1,4 +1,4 @@
-import { SvelteComponentTyped } from "svelte";
+import { SvelteComponent } from "svelte";
 declare const __propDef: {
     props: {
         elementId?: string | HTMLElement | undefined;
@@ -62,6 +62,6 @@ declare const __propDef: {
 export type GoogleTranslateProps = typeof __propDef.props;
 export type GoogleTranslateEvents = typeof __propDef.events;
 export type GoogleTranslateSlots = typeof __propDef.slots;
-export default class GoogleTranslate extends SvelteComponentTyped<GoogleTranslateProps, GoogleTranslateEvents, GoogleTranslateSlots> {
+export default class GoogleTranslate extends SvelteComponent<GoogleTranslateProps, GoogleTranslateEvents, GoogleTranslateSlots> {
 }
 export {};
