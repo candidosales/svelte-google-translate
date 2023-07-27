@@ -36,7 +36,6 @@ const exports = {
 files.forEach((file) => {
 	if (file !== 'index.svelte') {
 		const name = file.replace('.svelte', '');
-		console.log('name', name);
 		exports[`./${name}.svelte`] = {
 			types: `./dist/${name}.svelte.d.ts`,
 			svelte: `./dist/${name}.svelte`
