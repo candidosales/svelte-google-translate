@@ -62,7 +62,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/candidosales/svelte-google-translate/"
+    "url": "git+https://github.com/candidosales/svelte-google-translate.git"
   },
   "exports": {
     ".": {
