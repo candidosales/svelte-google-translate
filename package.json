@@ -1,7 +1,7 @@
 {
   "name": "@candidosales/svelte-google-translate",
   "description": "Google Translate component for Svelte",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "author": {
     "name": "Candido Sales Gomes",
     "email": "candidosg@gmail.com",
@@ -74,5 +74,8 @@
       "svelte": "./dist/GoogleTranslate.svelte"
     }
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "standard-version": "^9.5.0"
+  }
 }
