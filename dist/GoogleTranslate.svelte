@@ -70,11 +70,12 @@
 	} = $props();
 
 	$effect(() => {
-		googleTranslateInit();
+		const timeoutId = googleTranslateInit();
+		return () => clearTimeout(timeoutId);
 	});
 
-	function googleTranslateInit() {
-		setTimeout(function () {
+	function googleTranslateInit(): ReturnType<typeof setTimeout> {
+		return setTimeout(function () {
 			if (
 				typeof google !== 'undefined' &&
 				google != null &&
