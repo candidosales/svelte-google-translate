@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.18](https://github.com/candidosales/svelte-google-translate/compare/v0.0.17...v0.0.18) (2026-03-05)
+
+
+### Bug Fixes
+
+* add newline at end of package.json ([fcc3e9e](https://github.com/candidosales/svelte-google-translate/commit/fcc3e9ee896330d139a4e3cf7c413a7fdb9d7a0c))
+
 ### [0.0.17](https://github.com/candidosales/svelte-google-translate/compare/v0.0.15...v0.0.17) (2026-03-05)
 
 ### [0.0.15](https://github.com/candidosales/svelte-google-translate/compare/v0.0.14...v0.0.15) (2023-07-27)
