@@ -9,3 +9,9 @@ declare namespace App {
 	// interface PageData {}
 	// interface Platform {}
 }
+
+declare namespace google.translate {
+	class TranslateElement {
+		constructor(options: object, element: HTMLElement | string): void;
+	}
+}

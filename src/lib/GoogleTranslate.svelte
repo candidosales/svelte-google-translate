@@ -1,6 +1,4 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-
 	type InlineLayout = 'horizontal' | 'vertical' | 'dropdown';
 	type FloatPosition = 'TOP_LEFT' | 'TOP_RIGHT' | 'BOTTOM_LEFT' | 'BOTTOM_RIGHT';
 
@@ -59,19 +57,25 @@
 		attribution?: boolean;
 	}
 
-	export let elementId: HTMLElement | string = 'google-translate-element';
+	let {
+		elementId = 'google-translate-element',
+		options = {
+			pageLanguage: 'pt',
+			includedLanguages: 'pt,en,es,fr,nl,ja,zh-CN',
+			autoDisplay: false
+		}
+	}: {
+		elementId?: HTMLElement | string;
+		options?: TranslateElementOptions;
+	} = $props();
 
-	export let options: TranslateElementOptions = {
-		pageLanguage: 'pt',
-		includedLanguages: 'pt,en,es,fr,nl,ja,zh-CN',
-		autoDisplay: false
-	};
-	onMount(() => {
-		googleTranslateInit();
+	$effect(() => {
+		const timeoutId = googleTranslateInit();
+		return () => clearTimeout(timeoutId);
 	});
 
-	function googleTranslateInit() {
-		setTimeout(function () {
+	function googleTranslateInit(): ReturnType<typeof setTimeout> {
+		return setTimeout(function () {
 			if (
 				typeof google !== 'undefined' &&
 				google != null &&
